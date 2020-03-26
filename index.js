@@ -4,11 +4,16 @@
 
 // write a function that takes the value inputted in the form field and creates a new box below 
 
-
-function submitHandler ($('#js-shopping-list-form button').submit(event=> {
+ 
+function submitHandler $('#js-shopping-list-form button').submit(event=> {
   event.preventDefault()
   console.log('handler for .submit() called')
-  ($.shopping-list).append(#shopping-list-entry.text)
+  ($.shopping-list).append(li))
+
+}
+
+//. variable whose value is set to a function that creates a new block containing (#shopping-list-entry.text)
 
 
- // toggle .shopping-item__checked
+
+ // toggle .shopping-item__checked 
