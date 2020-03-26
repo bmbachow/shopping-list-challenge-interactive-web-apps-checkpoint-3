@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-#add-item {
-  display: block;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
