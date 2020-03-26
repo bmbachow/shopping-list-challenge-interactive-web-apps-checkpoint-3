@@ -1,1 +1,1 @@
-# shopping-list-challenge-interactive-web-apps-checkpoint-3
+This repo contains files that satisfy the criteria for the shopping list challenge in the third checkpoint of the interactive web apps module.
