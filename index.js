@@ -7,10 +7,22 @@
 
 function handleShoppingList(){
 
-  $('#js-shopping-list-form').submit(event=> {
-    event.preventDefault();
+  $('#js-shopping-list-form').submit(e=> {
+    e.preventDefault();
     console.log('handler for .submit() called');
-  
+    const listItem = $('#shopping-list-entry').val();
+    $('.shopping-list').append(
+      `<li>
+        <span class="shopping-item">${listItem}</span>
+        <div class="shopping-item-controls">
+          <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+          </button>
+          <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+          </button>
+        </div>
+      </li>`)
   });
 
   $('.shopping-list').on('click', '.shopping-item-toggle', function(e){
@@ -32,10 +44,3 @@ function handleShoppingList(){
 
 
 $(handleShoppingList);
-
-
-//. variable whose value is set to a function that creates a new block containing (#shopping-list-entry.text)
-
-
-
- // toggle .shopping-item__checked 
